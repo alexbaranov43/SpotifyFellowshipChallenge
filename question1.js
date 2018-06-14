@@ -2,10 +2,10 @@ sortByStrings = (s, t) => {
 let count = {};
 let sort = "";
 
-for (let char of s){
+for (char of s){
     count[char]? count[char]++ : count[char] = 1;
 }
-for (let char of t){
+for (char of t){
     if (count[char]) {sort += char.repeat(count[char])}
 }
 console.log(sort)
